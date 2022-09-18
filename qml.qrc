@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>WeatherPage.qml</file>
+        <file>StartPage.qml</file>
+        <file>StatusBar.qml</file>
+        <file>ControlPage.qml</file>
+        <file>BathRoom.qml</file>
+        <file>BedRoom.qml</file>
+        <file>KitchenRoom.qml</file>
+        <file>LivingRoom.qml</file>
+    </qresource>
+</RCC>
