@@ -13,7 +13,4 @@ Window {
         anchors.fill: parent
         initialItem: "StartPage.qml"
     }
-    StatusBar {
-        id: myStatusBar
-    }
 }

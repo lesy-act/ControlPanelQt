@@ -1,9 +1,10 @@
 import QtQuick 2.15
 
-Rectangle {
+Image {
+    id: controlBg
+    source: "qrc:/new/prefix1/bgStartPage.jpg"
     width: 1024
     height: 680
-    color: "#FFDAB9"
 
     Grid {
         anchors.horizontalCenter: parent.horizontalCenter

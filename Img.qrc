@@ -9,7 +9,11 @@
         <file>livingroom.png</file>
         <file>previous.png</file>
         <file>music.png</file>
-        <file>0.png</file>
+        <file>storm.png</file>
+        <file>temperature.png</file>
+        <file>humidity.png</file>
+        <file>undo.png</file>
+        <file>left-arrow.png</file>
         <file>1.png</file>
         <file>2.png</file>
         <file>3.png</file>
@@ -18,8 +22,6 @@
         <file>6.png</file>
         <file>7.png</file>
         <file>8.png</file>
-        <file>9.png</file>
-        <file>10.png</file>
         <file>11.png</file>
         <file>12.png</file>
         <file>13.png</file>
@@ -36,8 +38,6 @@
         <file>24.png</file>
         <file>25.png</file>
         <file>26.png</file>
-        <file>27.png</file>
-        <file>28.png</file>
         <file>29.png</file>
         <file>30.png</file>
         <file>31.png</file>
@@ -54,9 +54,36 @@
         <file>42.png</file>
         <file>43.png</file>
         <file>44.png</file>
-        <file>45.png</file>
-        <file>46.png</file>
-        <file>47.png</file>
-        <file>3200.png</file>
+        <file>1.gif</file>
+        <file>background.png</file>
+        <file>bg2.png</file>
+        <file>location.png</file>
+        <file>HnLocation.png</file>
+        <file>tempMax.png</file>
+        <file>tempMin.png</file>
+        <file>return.png</file>
+        <file>bgStartPage.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>temperature.png</file>
+        <file>storm.png</file>
+        <file>Img/01d.png</file>
+        <file>Img/01n.png</file>
+        <file>Img/02d.png</file>
+        <file>Img/02n.png</file>
+        <file>Img/03d.png</file>
+        <file>Img/03n.png</file>
+        <file>Img/04d.png</file>
+        <file>Img/04n.png</file>
+        <file>Img/09d.png</file>
+        <file>Img/09n.png</file>
+        <file>Img/10d.png</file>
+        <file>Img/10n.png</file>
+        <file>Img/11d.png</file>
+        <file>Img/11n.png</file>
+        <file>Img/13d.png</file>
+        <file>Img/13n.png</file>
+        <file>Img/50d.png</file>
+        <file>Img/50n.png</file>
     </qresource>
 </RCC>

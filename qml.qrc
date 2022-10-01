@@ -9,5 +9,9 @@
         <file>BedRoom.qml</file>
         <file>KitchenRoom.qml</file>
         <file>LivingRoom.qml</file>
+        <file>WeatherItem.qml</file>
+        <file>WeatherChart.qml</file>
+        <file>DetailWeather.qml</file>
+        <file>Foo.qml</file>
     </qresource>
 </RCC>

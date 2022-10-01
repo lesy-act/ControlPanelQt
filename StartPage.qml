@@ -1,13 +1,20 @@
 import QtQuick 2.0
 
 Item {
+
+    //    Image {
+    //        width: parent.width
+    //        height: parent.height
+    //        id: startBackGround
+    //        source: "qrc:/new/prefix1/bgStartPage.jpg"
+    //    }
     Rectangle {
         id: weatherMode
         height: parent.height
         width: parent.width / 2
         anchors {
-            top: parent.top
-            left: parent.left
+            left: startBackGround.left
+            verticalCenter: startBackGround.verticalCenter
         }
         color: "#1BA6DF"
         Image {
@@ -33,17 +40,20 @@ Item {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                stackView.push("WeatherPage.qml")
+                stackView.push("WeatherItem.qml")
+                appBridge.restApiRequest()
             }
         }
     }
     Rectangle {
         id: controlMode
-        height: parent.height / 2
+
+        height: parent.height
         width: parent.width / 2
         anchors {
-            bottom: parent.bottom
-            right: parent.right
+            left: weatherMode.right
+            rightMargin: 100
+            verticalCenter: startBackGround.verticalCenter
         }
         color: "#EE1C25"
         Image {
@@ -69,38 +79,35 @@ Item {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                stackView.push("ControlPage.qml")
+                stackView.push("WeatherChart.qml")
             }
         }
+    }
 
-        Rectangle {
-            id: musicMode
-            width: controlMode.width
-            height: controlMode.height
-            anchors {
-                bottom: parent.top
-            }
-            Image {
-                id: musicIcon
-                anchors {
-                    centerIn: parent
-                }
-                width: 130
-                height: 130
-                source: "qrc:/new/prefix1/music.png"
-            }
-            color: "#DAA520"
-            Text {
-                id: musicText
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    top: musicIcon.bottom
-                    topMargin: 20
-                }
-                text: "Music"
-                font.family: "Segoe UI Black"
-                font.pixelSize: 50
-                color: "White"
+    Rectangle {
+        id: statusBar
+        color: "#FFFFE0"
+        radius: 80
+        width: 500
+        height: 51
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+        }
+
+        Text {
+            id: timeText
+            anchors.centerIn: parent
+            color: "#008B8B"
+            font.pixelSize: 36
+            text: "12:12 "
+            font.family: "Segoe UI Black"
+        }
+        Timer {
+            interval: 1000
+            repeat: true
+            running: true
+            onTriggered: {
+                timeText.text = Qt.formatDateTime(new Date(), "hh:mm:ss")
             }
         }
     }
